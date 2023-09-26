@@ -2,13 +2,15 @@
     --light: rgb(197, 176, 204);
     --dark: rgb(47, 40, 68);
     --border-color: rgb(80, 80, 80);
-    --text-color: rgb(255, 164, 255);
+    --text-color: rgb(255, 152, 255);
     --glow: rgb(162, 99, 214);
     --light-blue: rgb(141, 255, 255);
 }
 
 *{
     margin: 0;
+    padding: 0;
+    
 }
 
 html{
@@ -19,27 +21,21 @@ body {
     background-color: var(--dark);
 }
 
-header {
-    background: linear-gradient(var(--light), var(--dark));
-    padding-top: 30px;
-}
-
-header h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 200%;
-    color: var(--text-color);
-}
-
 nav {
-    position: relative;
+    background: linear-gradient(var(--light), var(--dark));
+    padding-top: 15px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    opacity: .9;
+    z-index: 1;
 
 }
 ul {
     padding: 10px;
     display: flex;
-    justify-content: right;
-
+    justify-content: center;
 }
 
 li {
@@ -47,25 +43,42 @@ li {
     font-size: 100%;
     display: inline;
     margin: 0 2%;
+    font-size: 18px;
 }
+
 
 a {
     text-decoration: none;
 }
 
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 250%;
+    color: var(--light-blue);
+    padding: 10px;
+    margin-top: 20px;
+}
+
 h2 {
-    font-size: 35px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 18px;
 }
 
 h2, h3, p {
     color: var(--text-color);
     margin: 10px;
     display: flex;
+    z-index: 1;
 }
+
+
 
 section {
     display: flex;
@@ -75,6 +88,18 @@ section {
 
 footer {
     color: var(--glow);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#hero {
+    width: 100%;
+    height: 100%;
+    background: url(assets/me-and-dean.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: .7;
 }
 
 .photo {
@@ -82,15 +107,12 @@ footer {
     justify-content: center;
 }
 
-#about-me {
-    margin: 10% 0;
-}
-
 #my-photo {
-    height: 30%;
-    width: 30%;
-    border-radius: 20px;
-    border: 2px solid var(--border-color);
+    height:100vh;
+    width: 100vh;
+    position: relative;
+    top: 50px;
+    z-index: -1;
 }
 
 .nav-link {
@@ -108,24 +130,44 @@ footer {
 .card {
     background: linear-gradient(var(--dark), var(--light));
     margin: 5%;
-    border: 2px solid var(--border-color);
-    border-radius: 10px;
+    border: 4px solid var(--border-color);
+    transition-duration: .3s;
 }
 
 .card:hover {
     transform: translateY(-10%);
     scale: 101%;
     box-shadow: 0 0 15px var(--glow), inset 0 0 15px var(--glow);
-
 }
 
 .card:active {
     scale: 99%;
     box-shadow: inset 0 0 8px var(--border-color);
+    opacity: .8;
 }
 
 .card p {
     font-size: 15px;
+}
+
+.card-text {
+    width: 120px;
+    backdrop-filter: blur(10px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-top: 4px solid var(--border-color);
+    border-right: 4px solid var(--border-color);
+    border-bottom: 4px solid var(--border-color);
+    border-radius: 0 20px 20px 0;
+}
+
+.info p {
+    margin-left: 40%;
+    margin-top: 25%;
+    font-size: 20px;
 }
 
 #first-card {
