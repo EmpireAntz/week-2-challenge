@@ -17,10 +17,10 @@ This is a early-version of my personal web portfolio that will showcase my wed-d
 Here are some snapshots of the portfolio:
 
 - **Hero Section**:  
-  ![Hero Section](image.png)
+  ![Hero Section](assets/hero-section-screenshot.png)
 
 - **Project Links Section**:  
-  ![Project Links](image-1.png)
+  ![Project Links](assets/link-section-screenshot.png)
 
 ## Usage 
 This Project is meant to be a Portfolio that i will continue to update throughout my web-dev career.
