@@ -103,12 +103,13 @@ footer {
 }
 /* Styling for the hero section to make it large and in charge 😎*/
 #hero {
-    width: 100%;
-    height: 100%;
     background: url(assets/me-and-dean.jpg);
     background-size: cover;
     background-position: center;
     opacity: .7;
+}
+
+.container {
 }
 /* Moves the position of the info paragraph to a more desireable location */
 .info p {
