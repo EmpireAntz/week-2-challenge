@@ -1,3 +1,4 @@
+/* Variables created to reuse throughout the stylesheet */
 :root {
     --light: rgb(197, 176, 204);
     --dark: rgb(47, 40, 68);
@@ -6,21 +7,22 @@
     --glow: rgb(162, 99, 214);
     --light-blue: rgb(141, 255, 255);
 }
-
+/* Instead of attaching a separate reset.css page i just did a small reset for mardin an padding*/
 *{
     margin: 0;
     padding: 0;
     
 }
-
+/* Sets the font for the whole webpage as well as changes the scroll behavior so it isnt as abrupt */
 html{
     scroll-behavior: smooth;
+    font-family:Arial, Helvetica, sans-serif;
 }
-
+/* Sets the background color for the body */
 body {
     background-color: var(--dark);
 }
-
+/* Sets the nav bar to the top with a position of sticky so that it moves with the page when scrolled */
 nav {
     background: linear-gradient(var(--light), var(--dark));
     padding-top: 15px;
@@ -37,7 +39,7 @@ ul {
     display: flex;
     justify-content: center;
 }
-
+/* Removes bullet points from the list elements */
 li {
     list-style-type: none;
     display: inline;
@@ -45,12 +47,12 @@ li {
     font-size: 18px;
 }
 
-
+/* Removes underlines and link color */
 a {
     text-decoration: none;
 }
 
-
+/* Styling the text elements on the webpage */
 h1 {
     display: flex;
     justify-content: center;
@@ -76,8 +78,6 @@ h2, h3, p {
     display: flex;
 }
 
-
-
 section {
     display: flex;
     flex-wrap: wrap;
@@ -89,16 +89,7 @@ footer {
     margin: 20px;
     text-align: center;
 }
-
-#hero {
-    width: 100%;
-    height: 100%;
-    background: url(assets/me-and-dean.jpg);
-    background-size: cover;
-    background-position: center;
-    opacity: .7;
-}
-
+/* The .nav elements style the nav text and also add an active and a hover effect  */
 .nav-link {
     color: var(--glow);
 }
@@ -110,7 +101,23 @@ footer {
 .nav-link:active {
     color: var(--text-color);
 }
-
+/* Styling for the hero section to make it large and in charge 😎*/
+#hero {
+    width: 100%;
+    height: 100%;
+    background: url(assets/me-and-dean.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: .7;
+}
+/* Moves the position of the info paragraph to a more desireable location */
+.info p {
+    margin-left: 118px;
+    margin-top: 98px;
+    margin-bottom: 60px;
+    font-size: 20px;
+}
+/* All the card elements are styling the card sections. This probably took me the longest to do 😂 */
 .card {
     background: linear-gradient(var(--dark), var(--light));
     margin: 5%;
@@ -153,13 +160,6 @@ footer {
     border-radius: 0 20px 20px 0;
 }
 
-.info p {
-    margin-left: 118px;
-    margin-top: 98px;
-    margin-bottom: 60px;
-    font-size: 20px;
-}
-
 #first-card {
     background-image: url(assets/digital-marketing-meeting.jpg);
     background-size: cover;
@@ -190,7 +190,7 @@ footer {
     background-position: center;
 }
 
-
+/* Media queries for responsive design across multiple differnt screen sizes */
 @media screen and (min-width: 640px) {
     h1 {
         font-size: 85px;

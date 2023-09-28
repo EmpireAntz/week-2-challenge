@@ -1,6 +1,6 @@
-#Mikeys Portfolio
+# Mikeys Portfolio
 
-##Overview
+## Overview
 This is a early-version of my personal web portfolio that will showcase my wed-design skills as well as projects and achievements made.
 
 ## Website Structure
