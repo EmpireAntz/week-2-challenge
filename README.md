@@ -29,4 +29,3 @@ This Project is meant to be a Portfolio that i will continue to update throughou
 https://empireantz.github.io/week-2-challenge/
 
 ✨Created by Mikey Whipple✨
-
